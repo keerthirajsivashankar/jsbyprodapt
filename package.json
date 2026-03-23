@@ -1,0 +1,12 @@
+{
+  "name": "jsfundamentals",
+  "version": "1.0.0",
+  "description": "js fundamentals",
+  "license": "ISC",
+  "author": "keerthi raj s",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
