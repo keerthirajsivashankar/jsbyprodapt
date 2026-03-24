@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my Dom class</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Welcome to shapeshifter</h1>
+    <div class="btncontainer">
+      <button id="circle" class="btn btn-primary">i am a circle</button>
+      <button id="square" class="btn btn-secondary">i am a Square</button>
+      <button id="rectangle" class="btn btn-info">i am a rectangle</button>
+      <button id="triangle" class="btn btn-warning">i am a triangle</button>
+    </div>
+
+    <div class="ShapeShifter" id="ShapeShifter"></div>
+
+    <div class="newstuff">
+      <h1 id="mainTitle">DOM Selection Methods</h1>
+
+      <!-- Paragraphs -->
+      <p class="info">
+        This is a simple example of how to select elements in the DOM using
+        different methods.
+      </p>
+      <p class="info">Another paragraph with the same class.</p>
+
+      <!-- List -->
+      <ul id="techList">
+        <li class="tech">JavaScript</li>
+        <li class="tech">Python</li>
+        <li class="tech">CSS</li>
+      </ul>
+
+      <!-- Image -->
+      <img
+        id="logo"
+        src="https://placehold.co/100x100"
+        alt="Placeholder Logo"
+      />
+
+      <!-- Button -->
+      <button title="my title" id="changeBtn" class="btn btn-primary">
+        Click Me
+      </button>
+    </div>
+
+    <!--Mouse events-->
+    <h1>Mouse Events</h1>
+    <button
+      id="hero"
+      onmouseenter="addItem()"
+      onmouseleave="removeItem()"
+      class="btn btn-warning"
+    >
+      Hero
+    </button>
+
+    <ul id="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <!--Scripts if the page-->
+    <script>
+      const list = document.getElementById("list");
+
+      function addItem() {
+        const newItem = document.createElement("li");
+        newItem.textContent = "New Item";
+        list.appendChild(newItem);
+      }
+
+      function removeItem() {
+        if (list.lastChild) {
+          list.removeChild(list.lastChild);
+        }
+      }
+    </script>
+
+    <script type="module" src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
