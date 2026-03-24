@@ -51,3 +51,7 @@ console.log("PadEnd:", "5".padEnd(3, "0"));
 // Template literals
 let name = "John";
 console.log(`Hello, ${name}!`);
+
+console.log(str.slice(0, 5)); // Hello
+console.log(str.substring(0, 5)); // Hello
+console.log(str.substr(0, 5)); // Hello
